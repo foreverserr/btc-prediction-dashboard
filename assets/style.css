@@ -1,0 +1,197 @@
+/* /assets/css/styles.css */
+
+/* 全局樣式：淺色科技感 */
+body {
+    background-color: #f5f7fa !important;
+    color: #2c3e50 !important;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+/* 導航欄樣式 */
+.navbar {
+    background-color: #6d96b5 !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #2bbbad;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* 卡片樣式 */
+.card {
+    background-color: #e3edf3 !important;
+    border: 1px solid rgba(43, 187, 173, 0.35) !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(43, 187, 173, 0.2), 0 0 10px rgba(43, 187, 173, 0.25);
+}
+
+.card-header {
+    background-color: #cfdde6 !important;
+    color: #0f3b4c !important;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(43, 187, 173, 0.3);
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+}
+
+.card-body {
+    padding: 1.5rem !important;
+}
+
+/* 數據文字樣式 */
+.fs-5 {
+    font-size: 1.75rem !important;
+    font-weight: bold;
+    color: #17a2b8;
+    text-shadow: 0 0 3px rgba(23, 162, 184, 0.25);
+}
+
+/* 篩選下拉選單樣式 */
+.Select-control {
+    background-color: #e6eef4 !important;
+    color: #2c3e50 !important;
+    border: 1px solid #17a2b8 !important;
+    box-shadow: 0 0 5px rgba(23, 162, 184, 0.2);
+}
+
+.Select-value-label {
+    color: #2c3e50 !important;
+}
+
+.Select-arrow {
+    border-top-color: #2c3e50 !important;
+}
+
+.Select-menu-outer {
+    background-color: #e6eef4 !important;
+    border: 1px solid #17a2b8 !important;
+    box-shadow: 0 0 10px rgba(23, 162, 184, 0.25);
+}
+
+.Select-option.is-selected {
+    background-color: #dbe7ef !important;
+    color: #17a2b8 !important;
+}
+
+.Select-option:hover {
+    background-color: #dfeaf2 !important;
+}
+
+/* DatePicker 樣式 */
+.DateInput_input {
+    background-color: #e6eef4 !important;
+    color: #2c3e50 !important;
+    border: 1px solid #17a2b8 !important;
+    box-shadow: 0 0 5px rgba(23, 162, 184, 0.2);
+}
+
+.CalendarDay__selected, .CalendarDay__selected:hover {
+    background-color: #17a2b8 !important;
+    border: 1px solid #17a2b8 !important;
+}
+
+/* 按鈕樣式 */
+.btn {
+    font-weight: 500;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 6px;
+}
+
+.btn-primary {
+    background-color: #17a2b8 !important;
+    border-color: #17a2b8 !important;
+}
+
+.btn-info {
+    background-color: #2bbbad !important;
+    border-color: #2bbbad !important;
+    color: #0f3b4c !important;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(23, 162, 184, 0.35);
+}
+
+/* Loading 樣式 */
+.dash-loading {
+    background-color: rgba(230, 238, 244, 0.85) !important;
+}
+
+.dash-spinner {
+    border-color: #2bbbad !important;
+    border-top-color: #17a2b8 !important;
+}
+
+/* 表格 */
+#user-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#user-table .dash-header {
+    background-color: #cfdde6;
+    color: #0f3b4c;
+    font-weight: bold;
+    border-bottom: 1px solid #17a2b8;
+    text-align: center;
+    padding: 10px;
+}
+
+#user-table .dash-cell {
+    background-color: #e8f0f5;
+    color: #1f2d3a;
+    border: 1px solid rgba(23, 162, 184, 0.25);
+    text-align: left;
+    padding: 10px;
+}
+
+#user-table tr:nth-child(even) .dash-cell {
+    background-color: #dde7ee;
+}
+
+#user-table .dash-cell--active,
+#user-table .dash-cell--selected {
+    background-color: rgba(23, 162, 184, 0.2) !important;
+    border: 1px solid #17a2b8 !important;
+}
+
+#user-table .column-id {
+    width: 50px;
+    text-align: center;
+}
+#user-table .column-username {
+    width: 120px;
+    text-align: center;
+}
+#user-table .column-role {
+    width: 40px;
+    text-align: center;
+}
+
+#user-table .column-change_pass,
+#user-table .column-delete_btn {
+    width: 40px;
+    text-align: center;
+    padding: 5px 5px;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#user-table .column-change_pass {
+    color: #17a2b8;
+}
+
+#user-table .column-delete_btn {
+    color: #dc3545;
+}
+

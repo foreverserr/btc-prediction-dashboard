@@ -1,0 +1,32 @@
+# --- 核心框架 ---
+Flask
+Flask-Login
+Werkzeug
+SQLAlchemy
+
+# --- 数据处理与数学计算 ---
+numpy
+pandas
+scipy
+scikit-learn
+joblib
+
+# --- 深度学习 ---
+tensorflow
+h5py
+
+# --- 数据库连接 ---
+mysql-connector-python
+cryptography
+
+# --- 前端可视化 ---
+dash
+dash-bootstrap-components
+dash-mantine-components
+plotly
+
+# --- 后台调度与工具 ---
+APScheduler
+requests
+pytz
+python-dotenv

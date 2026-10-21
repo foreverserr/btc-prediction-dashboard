@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# 敏感配置
+.env
+*.env
+
+# 模型与数据大文件
+*.h5
+*.pkl
+*.csv
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
